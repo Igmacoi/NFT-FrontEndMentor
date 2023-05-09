@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    /* Primary */
+    --soft-blue: hsl(215,51%,70%);
+    --Cyan: hsl(178, 100%, 50%);
+    /* Neutral*/
+    --Very-dark-blueBG: hsl(217, 54%, 11%); /*main BG*/
+    --Very-dark-blueCARD: hsl(216, 50%, 16%);/*card bg*/
+    --Very-dark-blueLINE: hsl(215, 32%, 27%);/*line*/
+    --White: hsl(0, 0%, 100%);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Very-dark-blueBG);
+}
+
+.container{
+    background-color: var(--Very-dark-blueCARD);
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    padding-bottom: 0rem;
+    box-shadow: 0 10px 0px 5px hsl(217, 60%, 15%);
+
+}
+
+.img{
+    width: 18rem;
+    position: relative;
+}
+
+#imgnft {
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+}
+
+.img .imgcursor{
+    background-color: hsla(178, 100%, 50%, 0.5);
+    position: absolute;
+    border-radius: .5rem;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.img .imgcursor:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+
+.container h1{
+    color: var(--White);
+    font-size: 22px;
+    margin: 1rem 0;
+}
+
+.container h1:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.container .paragraph{
+    font-size: 18px;
+    color: var(--soft-blue);
+    margin-bottom: 1.3rem;
+}
+
+.infonft{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.infonft p{
+    font-size: 16px;
+}
+
+.infonft .price p{
+    color: var(--Cyan);
+}
+.infonft .time p{
+    color: var(--soft-blue);
+}
+
+.infonft .price,
+.infonft .time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.infonft .price img,
+.infonft .time img {
+    margin-right: 0.5rem;
+}
+
+hr{
+    background-color:  hsl(215,51%,70%);
+}
+
+.container .nick{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 ;
+}
+
+.nick img{
+    height: 2rem;
+}
+
+.nick p{
+    padding-left: 1rem;
+    color: var(--soft-blue);
+}
+
+.nick a{
+    text-decoration: none;
+    color: var(--White);
+}
+
+.nick a:hover{
+    color: var(--Cyan);
+}
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 2rem;
+    color: var(--soft-blue);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
